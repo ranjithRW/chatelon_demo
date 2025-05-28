@@ -47,9 +47,7 @@ const Header: React.FC = () => {
             <button aria-label="Search" className="text-[#1A365D] hover:text-[#C19A6B] transition-colors duration-200">
               <Search className="w-5 h-5" />
             </button>
-            <button aria-label="Cart" className="text-[#1A365D] hover:text-[#C19A6B] transition-colors duration-200">
-              <ShoppingCart className="w-5 h-5" />
-            </button>
+          
           </div>
 
           {/* Mobile menu button */}
