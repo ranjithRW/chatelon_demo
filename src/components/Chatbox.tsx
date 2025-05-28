@@ -87,7 +87,6 @@ const Chatbox: React.FC<ChatboxProps> = ({ isOpen, onClose, sessionId }) => {
         timestamp: new Date()
       }
     ]);
-    window.location.reload(); // Force reload to update session
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
@@ -99,7 +98,7 @@ const Chatbox: React.FC<ChatboxProps> = ({ isOpen, onClose, sessionId }) => {
 
   return (
     <div 
-      className={`fixed bottom-24 sm:bottom-44 right-8 sm:right-12 w-80 sm:w-96 bg-white rounded-lg shadow-xl overflow-hidden z-40
+      className={`fixed bottom-24 sm:bottom-44 right-8 sm:right-12 w-80 sm:w-96 bg-white rounded-lg shadow-xl overflow-hidden z-50
         transition-all duration-300 ease-in-out transform
         ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20 pointer-events-none'}`}
       style={{ maxHeight: 'calc(100vh - 150px)' }}
@@ -108,7 +107,6 @@ const Chatbox: React.FC<ChatboxProps> = ({ isOpen, onClose, sessionId }) => {
       <div className="bg-indigo-600 text-white p-4 flex justify-between items-center">
         <div className="flex items-center space-x-2">
           <h3 className="font-medium">Chat Assistant</h3>
-          <div className="text-xs opacity-75">Session: {sessionId.substring(0, 8)}...</div>
         </div>
         <div className="flex items-center space-x-2">
           <button 

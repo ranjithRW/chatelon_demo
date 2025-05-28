@@ -23,7 +23,7 @@ const Mascot: React.FC<MascotProps> = ({ onClick, isActive }) => {
 
   return (
     <div
-      className={`fixed bottom-8 right-8 z-50 transition-all duration-300 ease-in-out 
+      className={`fixed bottom-4 right-4 z-50 transition-all duration-300 ease-in-out 
         ${isActive ? 'scale-90' : 'scale-100'} 
         `}
       onMouseEnter={() => setIsHovered(true)}

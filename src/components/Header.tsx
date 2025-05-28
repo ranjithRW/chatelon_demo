@@ -21,7 +21,7 @@ const Header: React.FC = () => {
       }`}
     >
       <div className='bg-red-500 text-white text-center py-2'>
-        Want to stay in the loop with latest bookish news and views? Subscribe to HarperBroadcast!
+        <a href='#' className='hover:underline'>Want to stay in the loop with latest bookish news and views? Subscribe to HarperBroadcast!</a>
       </div>
       <br></br>
       <div className="container mx-auto px-4 md:px-6">
