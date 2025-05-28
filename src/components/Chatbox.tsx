@@ -99,7 +99,7 @@ const Chatbox: React.FC<ChatboxProps> = ({ isOpen, onClose, sessionId }) => {
 
   return (
     <div 
-      className={`fixed bottom-24 right-8 w-80 sm:w-96 bg-white rounded-lg shadow-xl overflow-hidden z-40
+      className={`fixed bottom-24 sm:bottom-44 right-8 sm:right-12 w-80 sm:w-96 bg-white rounded-lg shadow-xl overflow-hidden z-40
         transition-all duration-300 ease-in-out transform
         ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20 pointer-events-none'}`}
       style={{ maxHeight: 'calc(100vh - 150px)' }}
