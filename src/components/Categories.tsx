@@ -14,14 +14,14 @@ const categories = [
     name: 'Thriller', 
     icon: <Flame className="w-6 h-6" />, 
     description: 'Heart-pounding suspense and excitement',
-    image: 'https://images.pexels.com/photos/17832613/pexels-photo-17832613/free-photo-of-close-up-of-mystery-books.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+    image: 'https://images.pexels.com/photos/4153146/pexels-photo-4153146.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
   },
   { 
     id: 3, 
     name: 'Romance', 
     icon: <Heart className="w-6 h-6" />, 
     description: 'Love stories that touch the heart',
-    image: 'https://images.pexels.com/photos/1389098/pexels-photo-1389098.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+    image: 'https://images.pexels.com/photos/16796629/pexels-photo-16796629/free-photo-of-close-up-of-a-book.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
   },
   { 
     id: 4, 
@@ -35,7 +35,7 @@ const categories = [
     name: 'Fantasy', 
     icon: <Sparkles className="w-6 h-6" />, 
     description: 'Enter magical worlds of wonder',
-    image: 'https://images.pexels.com/photos/3066870/pexels-photo-3066870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+    image: 'https://images.pexels.com/photos/1765033/pexels-photo-1765033.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
   },
   { 
     id: 6, 

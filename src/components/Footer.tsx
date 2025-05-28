@@ -1,98 +1,150 @@
 import React from 'react';
-import { Facebook, Twitter, Instagram, Youtube, BookOpen, Mail, MapPin, Phone } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Youtube, Linkedin, Rss } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#F8F5F0] pt-16 pb-8">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+    <footer className="bg-[#2B5A8C] text-white">
+      {/* Main footer content */}
+      <div className="container mx-auto px-4 py-12">
+        {/* Logo and description */}
+        <div className="text-center mb-12">
           <div>
-            <div className="flex items-center mb-4">
-              <BookOpen className="w-8 h-8 text-[#1A365D] mr-2" />
-              <span className="text-2xl font-serif font-bold text-[#1A365D]">HarperCollins</span>
-              <span className="text-xs text-[#C19A6B] mt-1">INDIA</span>
-            </div>
-            <p className="text-gray-600 mb-6">
-              HarperCollins India publishes some of the finest writers from India and around the world.
-            </p>
-            <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-[#1A365D] flex items-center justify-center text-white hover:bg-[#C19A6B] transition-colors duration-300">
+            <p className="mx-auto h-16 w-auto"
+            >HarperCollins Publishers India</p>
+
+          </div>
+          <p className="text-sm leading-relaxed max-w-4xl mx-auto">
+            HarperCollins Publishers India Pvt. Ltd. (formerly known as HarperCollins Publishers India Ltd.),
+            a wholly-owned subsidiary of HarperCollins Publishers Ltd., UK, came into being in 1991 and has
+            completed more than 25 years in India. HarperCollins, as a brand, has completed over 200 years
+            globally. HarperCollins India is one of the world's largest entertainment-to-education publishers.
+          </p>
+        </div>
+
+        {/* Main content grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+          {/* Top Genres */}
+          <div>
+            <h3 className="text-lg font-bold mb-4 text-white">TOP GENRES</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-sm hover:text-gray-300 transition-colors">Poetry</a></li>
+              <li><a href="#" className="text-sm hover:text-gray-300 transition-colors">Hindi</a></li>
+              <li><a href="#" className="text-sm hover:text-gray-300 transition-colors">Graphic Novel</a></li>
+              <li><a href="#" className="text-sm hover:text-gray-300 transition-colors">Crime/Thriller/Mystery</a></li>
+              <li><a href="#" className="text-sm hover:text-gray-300 transition-colors">Biography, Memoir and True Story</a></li>
+            </ul>
+            <a href="#" className="text-sm font-semibold hover:text-gray-300 transition-colors mt-3 inline-block">
+              Explore more
+            </a>
+          </div>
+
+          {/* Popular Authors */}
+          <div>
+            <h3 className="text-lg font-bold mb-4 text-white">POPULAR AUTHORS</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-sm hover:text-gray-300 transition-colors">Shrayana Bhattacharya</a></li>
+              <li><a href="#" className="text-sm hover:text-gray-300 transition-colors">Anindita Ghose</a></li>
+              <li><a href="#" className="text-sm hover:text-gray-300 transition-colors">Shivani Sibal</a></li>
+              <li><a href="#" className="text-sm hover:text-gray-300 transition-colors">Farah Bashir</a></li>
+              <li><a href="#" className="text-sm hover:text-gray-300 transition-colors">Sreedhar Bevara</a></li>
+            </ul>
+            <a href="#" className="text-sm font-semibold hover:text-gray-300 transition-colors mt-3 inline-block">
+              Explore more
+            </a>
+          </div>
+
+          {/* Bestselling Books */}
+          <div>
+            <h3 className="text-lg font-bold mb-4 text-white">BESTSELLING BOOKS</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-sm hover:text-gray-300 transition-colors">Too Good To Be True</a></li>
+              <li><a href="#" className="text-sm hover:text-gray-300 transition-colors">Mahagatha</a></li>
+              <li><a href="#" className="text-sm hover:text-gray-300 transition-colors">Youth and Truth</a></li>
+              <li><a href="#" className="text-sm hover:text-gray-300 transition-colors">The Book Of Dog</a></li>
+              <li><a href="#" className="text-sm hover:text-gray-300 transition-colors">Onam in a Nightie</a></li>
+            </ul>
+            <a href="#" className="text-sm font-semibold hover:text-gray-300 transition-colors mt-3 inline-block">
+              Explore more
+            </a>
+          </div>
+
+          {/* About Us */}
+          <div>
+            <h3 className="text-lg font-bold mb-4 text-white">ABOUT US</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-sm hover:text-gray-300 transition-colors">Company Profile</a></li>
+              <li><a href="#" className="text-sm hover:text-gray-300 transition-colors">The Team</a></li>
+              <li><a href="#" className="text-sm hover:text-gray-300 transition-colors">Careers</a></li>
+              <li><a href="#" className="text-sm hover:text-gray-300 transition-colors">Manage Preferences</a></li>
+              <li><a href="#" className="text-sm hover:text-gray-300 transition-colors">Catalogues</a></li>
+            </ul>
+          </div>
+
+          {/* Global Divisions */}
+          <div>
+            <h3 className="text-lg font-bold mb-4 text-white">GLOBAL DIVISIONS</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-sm hover:text-gray-300 transition-colors">HarperCollins UK</a></li>
+              <li><a href="#" className="text-sm hover:text-gray-300 transition-colors">HarperCollins US</a></li>
+              <li><a href="#" className="text-sm hover:text-gray-300 transition-colors">HarperCollins Canada</a></li>
+              <li><a href="#" className="text-sm hover:text-gray-300 transition-colors">HarperCollins Christian Publishing</a></li>
+              <li><a href="#" className="text-sm hover:text-gray-300 transition-colors">HarperCollins Australia</a></li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Social Media Section */}
+        <div className="flex flex-col md:flex-row justify-between items-center mb-8">
+          <div className="flex items-center mb-4 md:mb-0">
+            <span className="text-sm mr-4">Follow HarperCollins India :</span>
+            <div className="flex space-x-3">
+              <a href="#" className="text-white hover:text-gray-300 transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-[#1A365D] flex items-center justify-center text-white hover:bg-[#C19A6B] transition-colors duration-300">
+              <a href="#" className="text-white hover:text-gray-300 transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-[#1A365D] flex items-center justify-center text-white hover:bg-[#C19A6B] transition-colors duration-300">
+              <a href="#" className="text-white hover:text-gray-300 transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-[#1A365D] flex items-center justify-center text-white hover:bg-[#C19A6B] transition-colors duration-300">
+              <a href="#" className="text-white hover:text-gray-300 transition-colors">
+                <Youtube className="w-5 h-5" />
+              </a>
+              <a href="#" className="text-white hover:text-gray-300 transition-colors">
+                <Linkedin className="w-5 h-5" />
+              </a>
+              <a href="#" className="text-white hover:text-gray-300 transition-colors">
+                <Rss className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
+
+          <div className="flex items-center">
+            <span className="text-sm mr-4">Follow HarperCollinsChildren's Books :</span>
+            <div className="flex space-x-3">
+              <a href="#" className="text-white hover:text-gray-300 transition-colors">
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a href="#" className="text-white hover:text-gray-300 transition-colors">
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a href="#" className="text-white hover:text-gray-300 transition-colors">
                 <Youtube className="w-5 h-5" />
               </a>
             </div>
           </div>
-          
-          <div>
-            <h3 className="text-lg font-bold text-[#1A365D] mb-4">Quick Links</h3>
-            <ul className="space-y-3">
-              {['Home', 'About Us', 'Books', 'Authors', 'Events', 'News', 'Contact'].map((item) => (
-                <li key={item}>
-                  <a href={`#${item.toLowerCase().replace(' ', '-')}`} className="text-gray-600 hover:text-[#C19A6B] transition-colors duration-200">
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-bold text-[#1A365D] mb-4">Categories</h3>
-            <ul className="space-y-3">
-              {['Fiction', 'Non-Fiction', 'Children\'s Books', 'Business', 'Biography', 'Self-Help', 'Fantasy', 'Romance'].map((item) => (
-                <li key={item}>
-                  <a href={`#category-${item.toLowerCase()}`} className="text-gray-600 hover:text-[#C19A6B] transition-colors duration-200">
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-bold text-[#1A365D] mb-4">Contact Us</h3>
-            <ul className="space-y-4">
-              <li className="flex items-start">
-                <MapPin className="w-5 h-5 text-[#C19A6B] mr-3 mt-0.5" />
-                <span className="text-gray-600">
-                  A-75, Sector 57, Noida, Uttar Pradesh 201301, India
-                </span>
-              </li>
-              <li className="flex items-center">
-                <Phone className="w-5 h-5 text-[#C19A6B] mr-3" />
-                <span className="text-gray-600">+91 120 404 4800</span>
-              </li>
-              <li className="flex items-center">
-                <Mail className="w-5 h-5 text-[#C19A6B] mr-3" />
-                <span className="text-gray-600">customer.service@harpercollins.co.in</span>
-              </li>
-            </ul>
-          </div>
         </div>
-        
-        <div className="pt-8 border-t border-gray-200 text-center md:flex md:justify-between md:items-center">
-          <p className="text-gray-600">
-            &copy; {new Date().getFullYear()} HarperCollins Publishers India. All Rights Reserved.
+      </div>
+
+      {/* Cookie notice */}
+      <div className="bg-black text-white py-4">
+        <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-sm mb-4 md:mb-0">
+            This website uses "cookies" to give you the best, most relevant experience. By continuing to browse the site,
+            you are agreeing to our use of cookies and privacy policy.
+            <a href="#" className="underline hover:text-gray-300 ml-1">Learn more</a>
           </p>
-          <div className="mt-4 md:mt-0 space-x-4">
-            <a href="#" className="text-gray-600 hover:text-[#C19A6B] transition-colors duration-200">
-              Privacy Policy
-            </a>
-            <a href="#" className="text-gray-600 hover:text-[#C19A6B] transition-colors duration-200">
-              Terms of Service
-            </a>
-            <a href="#" className="text-gray-600 hover:text-[#C19A6B] transition-colors duration-200">
-              Cookie Policy
-            </a>
-          </div>
+        
         </div>
       </div>
     </footer>
