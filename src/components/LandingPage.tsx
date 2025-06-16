@@ -74,22 +74,22 @@ function LandingPage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-16 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white">
+      <section className="pt-16 bg-white text-[#025C64]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Connect Your Business to
               <span className="text-yellow-400 block">Global Markets</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl mb-8 text-[#025C64] max-w-3xl mx-auto leading-relaxed">
               Streamline international trade with our comprehensive platform. From import/export documentation to logistics coordination, we make global commerce simple.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <button className="bg-yellow-500 text-blue-900 px-8 py-4 rounded-full text-lg font-semibold hover:bg-yellow-400 transition-all transform hover:scale-105 flex items-center">
+              <button className="bg-yellow-500 text-[#025C64] px-8 py-4 rounded-full text-lg font-semibold hover:bg-yellow-400 transition-all transform hover:scale-105 flex items-center">
                 Start Trading Now
                 <ArrowRight className="ml-2 h-5 w-5" />
               </button>
-              <button className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-900 transition-all">
+              <button className="border-2 border-white text-[#025C64] px-8 py-4 rounded-full text-lg font-semibold hover:bg-yellow-500 hover:text-blue-900 transition-all">
                 Watch Demo
               </button>
             </div>
@@ -341,19 +341,19 @@ function LandingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-blue-800 text-white py-20">
+      <section className="bg-white text-[#025C64] py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Expand Your Global Reach?
           </h2>
-          <p className="text-xl mb-8 text-blue-100">
+          <p className="text-xl mb-8 text-[#025C64]">
             Join thousands of businesses already trading successfully on our platform
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-yellow-500 text-blue-900 px-8 py-4 rounded-full text-lg font-semibold hover:bg-yellow-400 transition-all transform hover:scale-105">
+            <button className="bg-yellow-500 text-[#025C64] px-8 py-4 rounded-full text-lg font-semibold hover:bg-yellow-400 transition-all transform hover:scale-105">
               Start Free Trial
             </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-900 transition-all">
+            <button className="border-2 border-white text-[#025C64] px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-900 transition-all">
               Schedule Demo
             </button>
           </div>
@@ -379,7 +379,7 @@ function LandingPage() {
       </section>
 
       {/* Footer */}
-      <footer id="contact" className="bg-gray-900 text-white py-16">
+      <footer id="contact" className="bg-white text-[#025C64] py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div className="md:col-span-2">
@@ -387,28 +387,28 @@ function LandingPage() {
                 <Globe className="h-8 w-8 text-yellow-500" />
                 <span className="ml-2 text-xl font-bold">GoGlobal Trade</span>
               </div>
-              <p className="text-gray-300 mb-6 max-w-md">
+              <p className="text-[#025C64] mb-6 max-w-md">
                 Empowering businesses to succeed in global markets through innovative trade solutions and expert support.
               </p>
               <div className="space-y-2">
                 <div className="flex items-center">
                   <Mail className="h-5 w-5 text-yellow-500 mr-3" />
-                  <span className="text-gray-300">hello@goglobal.trade</span>
+                  <span className="text-[#025C64]">hello@goglobal.trade</span>
                 </div>
                 <div className="flex items-center">
                   <Phone className="h-5 w-5 text-yellow-500 mr-3" />
-                  <span className="text-gray-300">+1 (555) 123-4567</span>
+                  <span className="text-[#025C64]">+1 (555) 123-4567</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="h-5 w-5 text-yellow-500 mr-3" />
-                  <span className="text-gray-300">New York, London, Singapore</span>
+                  <span className="text-[#025C64]">New York, London, Singapore</span>
                 </div>
               </div>
             </div>
 
             <div>
               <h4 className="text-lg font-semibold mb-4">Services</h4>
-              <ul className="space-y-2 text-gray-300">
+              <ul className="space-y-2 text-[#025C64]">
                 <li><a href="#" className="hover:text-yellow-500 transition-colors">Global Logistics</a></li>
                 <li><a href="#" className="hover:text-yellow-500 transition-colors">Trade Compliance</a></li>
                 <li><a href="#" className="hover:text-yellow-500 transition-colors">Market Analytics</a></li>
@@ -418,7 +418,7 @@ function LandingPage() {
 
             <div>
               <h4 className="text-lg font-semibold mb-4">Company</h4>
-              <ul className="space-y-2 text-gray-300">
+              <ul className="space-y-2 text-[#025C64]">
                 <li><a href="#" className="hover:text-yellow-500 transition-colors">About Us</a></li>
                 <li><a href="#" className="hover:text-yellow-500 transition-colors">Careers</a></li>
                 <li><a href="#" className="hover:text-yellow-500 transition-colors">Press</a></li>
@@ -429,13 +429,13 @@ function LandingPage() {
 
           <div className="border-t border-gray-800 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
-              <p className="text-gray-400 text-sm">
+              <p className="text-[#025C64] text-sm">
                 © 2025 GoGlobal Trade. All rights reserved.
               </p>
               <div className="flex space-x-6 mt-4 md:mt-0">
-                <a href="#" className="text-gray-400 hover:text-yellow-500 text-sm transition-colors">Privacy Policy</a>
-                <a href="#" className="text-gray-400 hover:text-yellow-500 text-sm transition-colors">Terms of Service</a>
-                <a href="#" className="text-gray-400 hover:text-yellow-500 text-sm transition-colors">Cookie Policy</a>
+                <a href="#" className="text-[#025C64] hover:text-yellow-500 text-sm transition-colors">Privacy Policy</a>
+                <a href="#" className="text-[#025C64] hover:text-yellow-500 text-sm transition-colors">Terms of Service</a>
+                <a href="#" className="text-[#025C64] hover:text-yellow-500 text-sm transition-colors">Cookie Policy</a>
               </div>
             </div>
           </div>

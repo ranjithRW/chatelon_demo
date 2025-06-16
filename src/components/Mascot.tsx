@@ -7,12 +7,12 @@ interface MascotProps {
 
 const Mascot: React.FC<MascotProps> = ({ onClick, isActive }) => {
   const [isHovered, setIsHovered] = useState(false);
-  const [gifSrc, setGifSrc] = useState('/ai.gif');
+  const [gifSrc, setGifSrc] = useState('/1.gif');
 
   // Force GIF to restart and ensure continuous looping
   useEffect(() => {
     const forceGifReload = () => {
-      setGifSrc(`/ai.gif?t=${Date.now()}`);
+      setGifSrc(`/1.gif?t=${Date.now()}`);
     };
 
     // Reload GIF every few seconds to prevent any potential gaps
@@ -44,7 +44,7 @@ const Mascot: React.FC<MascotProps> = ({ onClick, isActive }) => {
           }}
           onError={() => {
             // Fallback if GIF fails to load
-            setGifSrc('/ai.gif');
+            setGifSrc('/1.gif');
           }}
         />
         {isHovered && !isActive && (
