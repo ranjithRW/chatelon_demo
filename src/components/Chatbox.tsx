@@ -104,7 +104,7 @@ const Chatbox: React.FC<ChatboxProps> = ({ isOpen, onClose, sessionId }) => {
       style={{ maxHeight: 'calc(100vh - 150px)' }}
     >
       {/* Header */}
-      <div className="bg-indigo-600 text-white p-4 flex justify-between items-center">
+      <div className="bg-[#025C64] text-white p-4 flex justify-between items-center">
         <div className="flex items-center space-x-2">
           <h3 className="font-medium">Chat Assistant</h3>
         </div>
